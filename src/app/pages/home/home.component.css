@@ -1,0 +1,241 @@
+.container__articles{
+
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+
+ margin-top: 50px;
+ flex-direction: row;
+ display: flex;
+
+
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+
+
+}
+
+.frase{
+  display: flex;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(107, 107, 210);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 100px;
+  width: 1000px;
+  height: 60px;
+  background: whitesmoke;
+  transition: width 2s, height 4s;
+  font-family:"Roboto", sans-serif;
+}
+
+
+
+.frase:hover{
+  width: 1200px;
+  height: 70px;
+
+}
+
+.btn-contato{
+
+  position:fixed;
+  top:350px;
+  right: 30px;
+  flex-direction: row;
+
+}
+
+a{
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 10px;
+  width: 200px;
+}
+
+.articles__main{
+  display: flex;
+  border-radius: 2px black solid;
+  height: 1000px;
+  width: 1200px;
+  margin-left: 100px;
+}
+
+.articles__main>img{
+margin-top: 300px;
+height: 200px;
+width: 200px;
+
+}
+
+.small-cards{
+  margin-top: 40px;
+  margin-left: 46px;
+
+}
+
+.card-body{
+
+margin-top: 300px;
+height: 200px;
+width: 200px;
+border: 30px solid blue;
+
+}
+
+.card.card.mb-3{
+  margin: 70px;
+  width: 200px;
+  margin-top: 176px;
+  height:200px ;
+  border: none;
+  background: transparent;
+}
+.activities{
+height: 600px;
+width: 600px;
+margin-left: 100px;
+margin-top: 20px;
+
+border: 30px solid blue;
+
+}
+.footer {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+  margin-top: 200px;
+
+  padding: 10px;
+  text-align: center;
+
+
+  background: linear-gradient(45deg, rgb(211, 211, 215), rgb(237, 229, 230), white);
+  background-size: 400% 300%;
+  animation: colors 15s ease infinite;
+}
+
+@keyframes colors{
+  0%{
+    background-position: 0% 30%;
+  }
+  50%{
+    background-position: 100% 70%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+
+}
+
+
+
+.articles__others{
+
+
+  display: flex;
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 500px;
+  font-size: larger;
+
+
+
+
+
+}
+
+.animated-div {
+  display: inline-block;
+  perspective: 1000px; /* Define a perspectiva para simular a rotação em 3D */
+}
+
+.card {
+  width: 100px; /* Largura da carta */
+  height: 200px; /* Altura da carta */
+
+
+
+  transform-style: preserve-3d; /* Mantém a hierarquia de transformações */
+  animation: rotateAnimation 10s linear infinite;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Esconde o verso da carta */
+}
+
+.back {
+  transform: rotateY(180deg); /* Inicialmente vira a carta para o verso */
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+/* Ajuste de responsividade para telas menores */
+@media only screen and (max-width: 768px) {
+  .container__articles {
+    flex-direction: column; /* Altere a direção do flex container para uma coluna em telas menores */
+    align-items: center; /* Centralize os itens verticalmente */
+  }
+
+  .articles__main {
+    width: 100%; /* Altere a largura para ocupar toda a largura da tela */
+    margin-left: 0; /* Remova a margem à esquerda */
+    margin-top: 20px; /* Ajuste o espaçamento superior */
+  }
+
+  .articles__main > img {
+    margin-top: 20px; /* Ajuste o espaçamento superior da imagem */
+  }
+
+  .small-cards {
+    margin-left: 0; /* Remova a margem à esquerda */
+  }
+
+  .card-body {
+    margin-top: 20px; /* Ajuste o espaçamento superior */
+    width: 100%; /* Altere a largura para ocupar toda a largura da tela */
+  }
+
+  .activities {
+    width: 100%; /* Altere a largura para ocupar toda a largura da tela */
+    margin-left: 0; /* Remova a margem à esquerda */
+  }
+
+  .footer {
+    flex-direction: column; /* Altere a direção do flex container para uma coluna */
+    align-items: center; /* Centralize os itens verticalmente */
+    margin-top: 50px; /* Ajuste o espaçamento superior */
+  }
+
+  .articles__others {
+    margin-top: 50px; /* Ajuste o espaçamento superior */
+  }
+
+}

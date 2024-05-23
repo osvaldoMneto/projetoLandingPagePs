@@ -1,0 +1,33 @@
+.message{
+
+  position:fixed;
+  top:20em;
+  width: 1000%;
+  margin-left: 50%;
+  left: -25%;
+  background-color: aliceblue;
+  border: 1px solid goldenrod;
+
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.massage-header{
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+
+}
+
+.message-p{
+  font-size:1.2pm;
+  color: antiquewhite;
+}
+
+
+.picsum-img-wrapper{
+  width: 200px;
+  height: 500px;
+}

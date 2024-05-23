@@ -1,0 +1,52 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Arsenal&family=Roboto+Condensed:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arsenal&family=Oswald:wght@700&family=Parisienne&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Arsenal&family=Oswald:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+
+/*@import "~bootstrap/dist/css/bootstrap.css";/* You can add global styles to this file, and also import other style files */
+*{
+
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background-image: url(/../assets/backnay1.png);
+  background-color: #efefef;
+  background-repeat: no-repeat;
+  background-size: cover; /* Isso fará com que a imagem cubra toda a área do elemento body */
+  background-position: center;
+}
+
+
+/* Estilos para telas pequenas (até 600px) */
+@media only screen and (max-width: 600px) {
+  /* Adicione estilos específicos para telas pequenas aqui */
+  body {
+    font-size: 14px; /* Reduza o tamanho da fonte */
+  }
+}
+
+/* Estilos para telas médias (601px a 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Adicione estilos específicos para telas médias aqui */
+  .container {
+    width: 80%; /* Reduza a largura do container */
+  }
+}
+
+/* Estilos para telas grandes (mais de 1024px) */
+@media only screen and (min-width: 1025px) {
+  /* Adicione estilos específicos para telas grandes aqui */
+  .container {
+    width: 1200px; /* Aumente a largura do container */
+  }
+}
+

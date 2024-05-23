@@ -1,0 +1,49 @@
+.atividadesNay{
+
+
+transition: width 2s, height 4s;
+font-family: "Roboto", sans-serif;
+height: 500px;
+width: 80%;
+border-radius: 2px;
+/*background-image: url(/../assets/kidnayne.jpeg);*/
+background-repeat: no-repeat;
+
+background-size: cover;
+color:black;
+font-size: 18px;
+margin: 152px;
+
+
+}
+.card-title{
+  margin: 40px;
+}
+p{
+  display: flex;
+  text-align: justify;
+  margin:18px;
+  color:black;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+hr{
+ border: 3px;
+ width: 100vh;
+}
+
+.atividadesNay:hover{
+
+ box-shadow: 1px 1px rgb(165, 165, 224);
+ border-radius: 2px;
+ font: color"white";
+
+
+}
+
+background-image:hover{
+
+  opacity: 0.8;
+
+}

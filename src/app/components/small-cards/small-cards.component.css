@@ -1,0 +1,115 @@
+.cardPost{
+  display: flex;
+  flex-direction:row;
+  margin-top: 20px;
+  width: 600px;
+  margin: 23px 120px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white; /* Adicione esta linha para definir o fundo como branco */
+  font-family: "Roboto", sans-serif;
+
+  box-shadow: 0 0 10px rgba(244, 243, 243, 0.5); /* Adicione a sombra desejada aqui */
+
+ /* Adicionando uma transição suave para a mudança de estado */
+ transition: box-shadow 0.5s ease;
+
+
+
+
+}
+
+.cardPost:hover{
+
+}
+
+.card>img{
+  height: 160px;
+  width: 160px;
+  margin-left: 32px;
+  margin-top: 20px;
+  }
+
+.card{
+
+ display: flex;
+ width: 350px;
+ height: 300px;
+ margin-left: 8px;
+ margin-top: 60px;
+ margin-bottom: 20px;
+ border: none;
+ background: transparent;
+ font-size: medium;
+ font-family: "Roboto", sans-serif;
+
+ box-shadow: 0 0 1px rgba(15, 15, 15, 0.5); /* Adicione a sombra desejada aqui */
+
+ /* Adicionando uma transição suave para a mudança de estado */
+ transition: box-shadow 0.2s ease;
+
+
+
+}
+
+.card:hover{
+ transition: box-shadow 0.2s ease;
+ opacity:0.9;
+ border: 0.2px solid rgb(221, 217, 217);
+ border-radius: 10px;
+ box-shadow: 3px 3px 3px 3px rgb(227, 227, 240);
+ animation-name: teste;
+ animation-duration: 10s;
+
+
+}
+h2{
+  display: flex;
+  position: absolute;
+  margin-left: 350px;
+  top:500px;
+  align-self: center;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  margin-top: 5px;
+}
+i{
+  padding: auto;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.card-title{
+  padding: 10px 3px;
+  margin-top: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/* Ajuste de responsividade para telas menores */
+@media only screen and (max-width: 768px) {
+  .cardPost {
+    display: none;
+  }
+
+  .card {
+    width: 100%; /* Altere a largura para ocupar toda a largura da tela */
+    margin: 10px auto; /* Centralize o elemento horizontalmente */
+  }
+
+  .card > img {
+    height: 120px; /* Reduza a altura da imagem */
+    width: 120px; /* Reduza a largura da imagem */
+    margin-left: auto; /* Alinhe a imagem no centro */
+    margin-right: auto; /* Alinhe a imagem no centro */
+    margin-top: 10px; /* Ajuste o espaçamento superior */
+  }
+
+  .card-title {
+    margin-top: 10px; /* Ajuste o espaçamento superior */
+    text-align: center; /* Centralize o texto */
+
+  }
+}
