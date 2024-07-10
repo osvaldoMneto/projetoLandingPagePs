@@ -199,15 +199,38 @@ border: 30px solid blue;
 
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
+  .articles__others{
+    margin: 0px 0px;
+    display: none;
+  }
+  .frase{
+
+    width: 100vw;
+    transition:none;
+    margin: 0px;
+  }
+  .frase:hover{
+    width: 100vw;
+  }
+  .frase>h2{
+    font-size: 24px;
+  }
   .container__articles {
-    flex-direction: column; /* Altere a direção do flex container para uma coluna em telas menores */
-    align-items: center; /* Centralize os itens verticalmente */
+    height: auto;
+     /* Centralize os itens verticalmente */
+     display: flex;
+
+    width: 100vw;
   }
 
   .articles__main {
-    width: 100%; /* Altere a largura para ocupar toda a largura da tela */
-    margin-left: 0; /* Remova a margem à esquerda */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw; /* Altere a largura para ocupar toda a largura da tela */
+   /* Remova a margem à esquerda */
     margin-top: 20px; /* Ajuste o espaçamento superior */
+    margin-left: 0px;
   }
 
   .articles__main > img {
