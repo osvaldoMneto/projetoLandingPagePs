@@ -24,6 +24,10 @@
 
 }
 
+.card_responsive{
+  display: none;
+}
+
 .card>img{
   height: 160px;
   width: 160px;
@@ -90,6 +94,43 @@ i{
 
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
+
+  .card_responsive{
+    display: block;
+    position: relative;
+    background-color: rgba(245, 243, 243);
+    padding: 15px;
+    border-radius: 7px;
+    text-align: center;
+  }
+
+  .card_responsive>h2{
+    font-size: 2px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(157, 157, 157);
+  }
+
+  ul{
+    list-style-type: none;
+
+  }
+
+  .card_atividade{
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 20px ;
+    border: 3px solid black;
+    border-radius: 7px;
+    margin-right: 30px;
+
+  }
+  .card_atividade>h3{
+    font-size: 20px;
+  }
+  h2{
+    display: none;
+
+  }
   .cardPost {
     display: none;
   }

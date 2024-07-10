@@ -115,8 +115,15 @@ ul{
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
 
+
+
   .app-cards{
 
+  }
+
+  .footer{
+    position: relative;
+    margin-top: 190px;
   }
   h2 {
     font-size: 24px; /* Reduza o tamanho da fonte para o título */
@@ -144,7 +151,8 @@ ul{
   ul {
     flex-direction: column; /* Altere a direção do flex container para uma coluna */
     align-items: center; /* Centralize os itens horizontalmente */
-    margin-top: 20px; /* Ajuste o espaçamento superior */
+    margin: 20px 0;
+     /* Ajuste o espaçamento superior */
   }
 
   .conteudo > ul > li {

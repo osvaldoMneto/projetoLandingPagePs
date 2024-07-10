@@ -1,16 +1,23 @@
 import { AtividadesService } from './../../services/atividades.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
   templateUrl: './menu-bar.component.html',
   styleUrls: ['./menu-bar.component.css']
 })
+
+
+
 export class MenuBarComponent {
+
 
 constructor(private atividadeservice : AtividadesService){
 
 }
+  OnInit(){
+    this.abrirMenu()
+  }
   enviarParaComponenteB(hero: any) {
     this.atividadeservice.enviarObjetoClicado(hero)
  }
@@ -24,5 +31,10 @@ constructor(private atividadeservice : AtividadesService){
     }
 }
 
+abrirMenu(){
+  console.log('oi')
+  const menu = document.querySelector('.collapse')
+  menu?.classList.toggle('aberto')
+}
 
 }
