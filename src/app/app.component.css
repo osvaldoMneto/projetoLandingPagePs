@@ -1,32 +1,82 @@
-footer>ul{
+footer{
+
+}
+img{
+  height: 20px;
+  margin-right: 5px;
+}
+
+a{
+  color: #000000;
+}
+li{
+  list-style-type: none;
+}
+.titulo{
+  display: flex;
+}
+
+
+.conteiner-footer{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-  color: rgb(14, 23, 52) ;
-  margin-left: 26px;
-  align-items: center;
-  border: 4px solid black;
-  width: 440px;
+  padding-top: 20px;
 }
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 75%;
+}
+
+.infos{
+
+}
+
+.copyright{
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 35%;
+  text-align: center;
+  font-size: 18px;
+  padding: 25px;
+ }
+
+ .infos>p{
+  font-weight: 600;
+  text-align: end;
+ }
+
+ .infos>ul>li{
+  margin: 5px;
+ }
+
+
+
 h2{
   font-weight: bold;
   font-size: 100px;
-  margin-left: 40px;
+  width: 100%;
+  text-align: center;
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
+  padding-left: 22px;
 }
-.zap{
-  width:25px;
+
+
+span{
+  height: 100%;
+  padding: 5px;
 }
+
 .conteudo>ul>li{
   display: flex;
   margin-right: 130px;
   border: 4px solid black;
 
 }
+
 .activities{
 margin-bottom: 100px;
 margin-top: -110px;
@@ -44,7 +94,6 @@ border: 2px solid rgb(202, 202, 235);
 background: rgb(255, 245, 199);
 border-radius: 4px;
 
-
 }
 .imagem{
 
@@ -60,29 +109,12 @@ hr{
   width: 100vh;
  }
 
- footer{
+ .conteiner-footer{
   border: solid 1px black;
+  width: 100%;
+  height: 240px;
+  background-color: blueviolet;
  }
-/* .activities:hover{
-
-  box-shadow: 1px 1px 2px 2px rgb(165, 165, 224);
-  border-radius: 4px;
-  font: color"white";
-  border: 2px solid rgb(202, 202, 235);
-  background: rgb(255, 245, 199);
-  border-radius: 4px;
-
-
-
- }*/
-
- background-image:hover{
-
-
-   opacity: 0.8;
-
- }
-
 
 
 
@@ -96,20 +128,6 @@ a{
   justify-content: center;
 }
 
-ul{
-  display: flex;
-  flex-direction: row;
-  margin-left: 26px;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 400px;
-  margin-right: 436px;
-  margin-top: 40px;
- text-decoration: none;
- list-style-type: none;
-
-
-}
 
 
 /* Ajuste de responsividade para telas menores */
@@ -117,26 +135,79 @@ ul{
 
 
 
-  .app-cards{
 
-  }
 
-  .footer{
-    position: relative;
-    margin-top: 190px;
+
+  .titulo{
+    display: flex;
   }
+  .conteiner-footer{
+    color: #d5d5d5;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+   }
+
+   .footer{
+    display: flex;
+    height: 65%;
+   }
+
+
+
+
+   .copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 35%;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+   }
+
+
+   .infos>p{
+    font-weight: 600;
+    text-align: end;
+   }
+
+   .infos>ul>li{
+    margin: 5px;
+   }
+
   h2 {
-    font-size: 24px; /* Reduza o tamanho da fonte para o título */
-    margin-left: 20px; /* Ajuste a margem esquerda do título */
+    margin:0px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding-left: 22px;
+  }
+
+  span{
+    height: 100%;
+    padding: 5px;
   }
 
   .activities {
-    width: 100%; /* Altere a largura para ocupar toda a largura da tela */
     margin-left: 0; /* Remova a margem à esquerda */
     margin-top: 20px; /* Ajuste o espaçamento superior */
     font-size: 16px; /* Reduza o tamanho da fonte */
+    width: 300px;
+    position: absolute;
+    top: 850px;
+    left: 14vw;
+    height: auto;
   }
-
+  .imagem {
+    width: 278px;
+  }
+  .imagem>img{
+    position: relative;
+    width: 100%;
+  }
   hr {
     width: 100%; /* Altere a largura para ocupar toda a largura da tela */
   }
@@ -148,12 +219,6 @@ ul{
     align-items: center; /* Centralize os itens horizontalmente */
   }
 
-  ul {
-    flex-direction: column; /* Altere a direção do flex container para uma coluna */
-    align-items: center; /* Centralize os itens horizontalmente */
-    margin: 20px 0;
-     /* Ajuste o espaçamento superior */
-  }
 
   .conteudo > ul > li {
     margin-right: 0; /* Remova a margem direita */

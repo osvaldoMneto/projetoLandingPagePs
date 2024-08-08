@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class MenuBarComponent {
 
-
+index = false
 constructor(private atividadeservice : AtividadesService){
 
 }
@@ -32,9 +32,19 @@ constructor(private atividadeservice : AtividadesService){
 }
 
 abrirMenu(){
-  console.log('oi')
-  const menu = document.querySelector('.collapse')
-  menu?.classList.toggle('aberto')
+  const menu = document.querySelector('.mainMenu_resp')
+  menu?.classList.toggle('nav-bar-aberta')
+  //const icone = document.getElementById('menu')as HTMLLIElement
+ // const lista = document.getElementById('lista')as HTMLLIElement
+  //if(this.index==false){
+  //icone.style.order='2'
+ // lista.style.order='1'
+  //this.index=true
+  //}else if(this.index==true){
+   // icone.style.order='1'
+   // lista.style.order='2'
+   // this.index=false
+ // }
 }
 
 }

@@ -1,3 +1,57 @@
+
+
+@keyframes menuAnimacaoAbrir {
+  from{
+    width: 45px;
+  }to{
+    width: 130px;
+  }
+}
+@keyframes menuAnimacaoFechar {
+  from{
+    width: 130px;
+
+  }to{
+    width: 45px;
+  }
+}
+.mainMenu_resp{
+  display: block;
+  margin-right: 30px;
+  width: 45px;
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  animation-name: menuAnimacaoFechar;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.mainMenu_resp>span{
+  cursor: pointer;
+}
+.nav-bar{
+  text-align: start;
+  display: flex;
+}
+.nav-bar>li{
+  cursor: pointer;
+  font-size: 13px;
+  list-style-type: none;
+  text-align: start;
+  margin: 0 10px;
+}
+.nav-bar-aberta{
+
+  animation-name: menuAnimacaoAbrir;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
 .container__menu-bar{
   width: 1200px;
   display: flex;
@@ -17,7 +71,7 @@
 }
 .container__menu-bar>Ul>li{
   display: flex;
-  margin-right: 20px;
+  margin-right: 10px;
 
 }
 .mainMenu{
@@ -44,20 +98,58 @@
     justify-content: space-between;
   }
 
-  .navbar-toggler{
-    margin: 0 auto;
-  }
-
-  .collapse{
+  .mainMenu{
     display: none;
-    width: 50px;
   }
 
-.aberto{
-  display: block !important;
-
-}
-  .container__menu-bar > ul.show {
-
+  @keyframes menuAnimacaoAbrir {
+    from{
+      width: 45px;
+    }to{
+      width: 130px;
+    }
   }
+  @keyframes menuAnimacaoFechar {
+    from{
+      width: 130px;
+
+    }to{
+      width: 45px;
+    }
+  }
+  .mainMenu_resp{
+    display: block;
+    margin-right: 30px;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    animation-name: menuAnimacaoFechar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+  .nav-bar{
+    text-align: start;
+    display: flex;
+  }
+  .nav-bar>li{
+    font-size: 13px;
+    list-style-type: none;
+    text-align: start;
+    margin: 0 10px;
+  }
+  .nav-bar-aberta{
+
+    animation-name: menuAnimacaoAbrir;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+
 }
+
+

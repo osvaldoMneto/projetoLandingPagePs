@@ -19,30 +19,6 @@ header{
 
 }
 
-.frase{
-  display: flex;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(107, 107, 210);
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
-  justify-content: center;
-  margin: 100px;
-  width: 1000px;
-  height: 60px;
-  background: whitesmoke;
-  transition: width 2s, height 4s;
-  font-family:"Roboto", sans-serif;
-}
-
-
-
-.frase:hover{
-  width: 1200px;
-  height: 70px;
-
-}
-
 .btn-contato{
 
   position:fixed;
@@ -204,7 +180,7 @@ border: 30px solid blue;
     display: none;
   }
   .frase{
-
+    display: none;
     width: 100vw;
     transition:none;
     margin: 0px;

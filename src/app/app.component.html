@@ -1,7 +1,15 @@
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
 <app-home></app-home>
 <div >
   <div id="componenteExibicao" class="activities" *ngIf="heroiClicado">
-    <h2>Atividades</h2>
+    <div class="titulo">
+      <h2> </h2>
+      <span class="material-symbols-outlined" (click)="fecharHeroi()">close</span>
+    </div>
     <p> <strong>{{heroiClicado.name}} </strong></p>
     <p> {{ heroiClicado.text}}</p>
     <img >
@@ -14,40 +22,43 @@
 
 <router-outlet></router-outlet>
 <!-- Footer da pagina-->
+ <footer>
+<div class="conteiner-footer">
+
 <div class="footer">
-  <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
 
- <footer class="text-center text-white" style="background-color:rgb(123, 123, 235)">
- <!-- Grid container -->
- <div class="container pt-4">
-   <!-- Section: Social media -->
-   <div class="mb-4">
-     <!-- Facebook -->
-     <div class="conteúdo">
-     <h6>Contato: (73) 98841-2418</h6>
+<div class="redes-sociais infos">
+  <p>Redes sociais</p>
+<ul>
+  <li>
+    <a href="https://www.instagram.com/nayanelemospsicologa/">
+    <img class="redes" src="/../assets/instagram.png" alt="Instagram">Instagram</a>
+  </li>
+  <li>
+    <a href="https://api.whatsapp.com/send?phone=73988412418" target="_blank">
+    <img  class="redes" src="/../assets/whatsapp.png" alt="whatsapp">Facebook</a>
+  </li>
+</ul>
+</div>
 
-     <ul>
-      <li>
-        <a href="https://www.instagram.com/nayanelemospsicologa/">
-        <img src="/../assets/instagram.png" alt="Instagram"></a>
-        </li>
-      <li>
-        <a href="https://api.whatsapp.com/send?phone=73988412418" target="_blank">
-        <img  class="zap" src="/../assets/whatsapp.png" alt="whatsapp"></a>
-      </li>
-
-    </ul>
-  </div>
-       </div>
-       </div>
-
- <!-- Copyright -->
- <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-   © 2023 Author:
-   <a class="text-dark" href="">Toak-Technology</a>
- </div>
- <!-- Copyright -->
-</footer>
+<div class="contato infos">
+  <p style="text-align: center;">Contato</p>
+  <ul>
+    <li>
+      <a href="https://api.whatsapp.com/send?phone=73988412418" target="_blank">
+      <img  class="redes" src="/../assets/whatsapp.png" alt="whatsapp">whatsapp</a>
+    </li>
+  </ul>
+</div>
 
 </div>
+ <!-- Copyright -->
+ <div class="copyright">
+   © 2023 Author:
+   <a href="">Toak-Technology</a>
+ </div>
+
+
+
+</div>
+</footer>

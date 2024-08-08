@@ -2,21 +2,27 @@
 <div class="container__card">
 
   <div class="big-card__photo">
-      <img src="/../assets/nayaneJar.jpeg" alt="foto da psicologa Nayane" >
+      <img src="/../assets/imagemcard.jpg" alt="foto da psicologa Nayane" >
 
   </div>
   <div class="big-card__title">
-    <h2>Nayane Lemos - Piscóloga infantil</h2>
+    <h2>Nayane Lemos - Psicóloga infantil</h2>
 
   </div>
   <div class="big-card_descricao">
 
-        <p>
-          Olá! Sou, psicóloga infantil apaixonada por ajudar crianças e suas famílias a desenvolverem habilidades emocionais saudáveis e a superarem desafios que possam estar afetando seu bem-estar. Com uma abordagem acolhedora e lúdica, busco criar um ambiente seguro e estimulante para que as crianças possam expressar suas emoções, desenvolver recursos internos e alcançar seu pleno potencial.
-        </p>
+          <p class="card-text ">Olá! Sou psicóloga infantil, apaixonada por ajudar crianças e suas famílias a desenvolverem habilidades emocionais saudáveis e a superarem desafios que possam estar afetando seu bem-estar. Com uma abordagem acolhedora e lúdica, busco criar um ambiente seguro e estimulante para que as crianças possam expressar suas emoções, desenvolver seus recursos internos e alcançar seu pleno potencial.</p>
 
-        <button type="button" [routerLink]="[]"  class="btn btn-outline-secondary">Saiba Mais</button>
+          <p class=" card-text desactive">Meu objetivo é auxiliar as crianças a expressarem suas emoções, construírem habilidades sociais e emocionais, superarem desafios e alcançarem um desenvolvimento saudável. Busco fornecer um espaço seguro, onde as crianças possam se sentir à vontade para compartilhar suas preocupações, explorar suas emoções e aprender estratégias para lidar com elas. Trabalho em estreita colaboração com a família para criar um plano de tratamento individualizado, que atenda às necessidades específicas da criança.</p>
+  </div>
+  <div class="btns_card">
+
+      <div class="btns_carousel">
+
+        <button type="button" (click)="proximoSlide()" [routerLink]="[]"  class="btn btn-outline-secondary nextR material-symbols-outlined desactive">arrow_back_ios <p>Sobre mim</p></button>
+        <button type="button" class=" btn btn-outline-secondary previewR material-symbols-outlined" (click)="proximoSlide()"><p>Abordagem</p> arrow_forward_ios</button>
       </div>
+  </div>
 </div>
 
 
@@ -28,12 +34,20 @@
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="/../assets/nayaneJar.jpeg" alt="foto da psicologa Nayane" >
+        <img src="/../assets/imagemcard.jpg" alt="foto da psicologa Nayane" >
       </div>
       <div class="col-md-8">
         <div class="card-body">
+
           <p class="card-text">Olá! Sou, psicóloga infantil apaixonada por ajudar crianças e suas famílias a desenvolverem habilidades emocionais saudáveis e superarem desafios que possam estar afetando seu bem-estar.</p>
           <p class="card-text">Com uma abordagem acolhedora e lúdica, busco criar um ambiente seguro e estimulante para que as crianças possam expressar suas emoções, desenvolver recursos internos e alcançar seu pleno potencial</p>
+
+          <p class="card-text desactive">Meu objetivo é auxiliar as crianças a expressarem suas emoções, construírem habilidades sociais e emocionais, superarem desafios e alcançarem um desenvolvimento saudável. Busco fornecer um espaço seguro, onde as crianças possam se sentir à vontade para compartilhar suas preocupações, explorar suas emoções e aprender estratégias para lidar com elas. Trabalho em estreita colaboração com a família para criar um plano de tratamento individualizado, que atenda às necessidades específicas da criança.</p>
+        </div>
+        <div class="btns_carousel">
+
+          <button type="button" (click)="proximoSlide()" [routerLink]="[]"  class="btn btn-outline-secondary next material-symbols-outlined desactive">arrow_back_ios <p>Sobre mim</p></button>
+          <button type="button" class=" btn btn-outline-secondary preview material-symbols-outlined" (click)="proximoSlide()"><p>Abordagem</p> arrow_forward_ios</button>
         </div>
       </div>
     </div>

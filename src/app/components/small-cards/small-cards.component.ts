@@ -11,12 +11,11 @@ import { AtividadesService } from 'src/app/services/atividades.service';
 })
 export class SmallCardsComponent {
   constructor(private atividadeService: AtividadesService) {}
-
+  index = true
   Small = false;
-  ngOnInit() {
+  onInit() {
 
   }
-
   quantidadeCards = 4;
 
   Heroes: any[] = [
@@ -27,13 +26,7 @@ export class SmallCardsComponent {
   ];
 
 
-aoClicarNoObjeto() {
-  console.log('Objeto clicado:', this.Heroes);
-  const elemento = document.getElementById('componenteExibicao');
-    if (elemento) {
-      elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
+
 
 enviarParaComponenteB(hero: any) {
    this.atividadeService.enviarObjetoClicado(hero);
@@ -48,6 +41,18 @@ selectHero(hero: any) {
     if (elemento) {
       elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+}
+
+
+
+abrirAtividades(){
+  if(this.index){
+  const atividade = document.querySelector('#cardAtividade')
+  atividade?.classList.toggle('card_atividades_aberto')
+  atividade?.classList.toggle('card_atividades_fechado')
+  this.index = false
+  console.log(this.index)
+}
 }
 
 }

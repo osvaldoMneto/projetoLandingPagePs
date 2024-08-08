@@ -1,10 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Arsenal&family=Oswald:wght@700&family=Parisienne&family=Roboto+Condensed:wght@700&display=swap');
 .container__menu__title{
-
+  height: 75px;
   color:rgb(19, 19, 20);
   font-family: 'Parisienne', cursive;
-
+  font-size: 30px;
   background: linear-gradient(45deg, rgb(232, 232, 239), pink, white);
   background-size: 400% 300%;
   animation: colors 12s ease infinite
@@ -41,6 +41,7 @@
 }
 
 .frase{
+  display: none;
   font-size: 18px;
   color: rgb(94, 33, 250);
 }
@@ -50,7 +51,7 @@
     width: 100vw;
   }
   .container__menu__title > h2 {
-    font-size: 40px; /* Reduza o tamanho da fonte em telas menores */
+    font-size: 30px; /* Reduza o tamanho da fonte em telas menores */
   }
 }
 
