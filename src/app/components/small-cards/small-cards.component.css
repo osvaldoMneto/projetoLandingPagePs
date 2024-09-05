@@ -7,18 +7,23 @@
   padding: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: white; /* Adicione esta linha para definir o fundo como branco */
   font-family: "Roboto", sans-serif;
-
   box-shadow: 0 0 10px rgba(244, 243, 243, 0.5); /* Adicione a sombra desejada aqui */
 
  /* Adicionando uma transição suave para a mudança de estado */
  transition: box-shadow 0.5s ease;
 
-
-
-
 }
+
+.card-body{
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  background-color: #ffb5c591;
+  /* border: solid 1px #6f42c1; */
+  box-shadow: 0px 0px 2px 0px #6f42c1;
+}
+
 .card_atividades_aberto{
   display: none;
 }
@@ -43,7 +48,7 @@
 .card{
 
  display: flex;
- width: 350px;
+ width: 16rem;
  height: 300px;
  margin-left: 8px;
  margin-top: 60px;
@@ -96,91 +101,22 @@ i{
   font-family: "Roboto", sans-serif;
 }
 
-.card_atividades{
-  display: none;
-}
+
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
-
-
-
-
-
-  .card_atividades_fechado{
-    display: block;
-    height: 80px;
-    margin-top: 40px;
-    width: 350px;
-    text-align: center;
-    background-color: #fff;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    overflow: hidden;
+  .cardPost{
+    margin: 0px;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 60px;
   }
-  .card_atividades_fechado>h1{
-    margin-bottom: 90px;
-  }
-  .card_atividades_aberto{
-    display: block;
-    text-align: center;
-    background-color: #fff;
-    margin-top: 40px;
-    justify-content: center;
-    height: 400px;
-    width: 350px;
-    border-radius: 12px;
-    animation-name: atividadeAnimation;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in-out;
-    overflow: hidden;
-
+.card{
+width: 10rem;
+height: 200px;
+font-size: 12px;
+margin-top: 20px;
 }
-@keyframes atividadeAnimation {
-  from{
-    height: 80px;
-  }to{
-    height: 400px;
-  }
+h5{
+  font-size: 16px;
 }
-.card_atividades_aberto>h1{
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-ul{
-    text-align: center;
-    margin-right: 30px;
-    list-style-type: none;
-}
-ul>li{
-    height: auto;
-    margin-bottom: 17px;
-    border-radius: 8px;
-    border: 0.2px solid black;
-    padding: 10px;
-
-}
-ul>li:hover{
-    box-shadow: 1px 1px 5px black;
-}
-ul>li>h1{
-    font-size: 20px;
-}
-ul>li>p{
-    font-size: 13px;
-}
-
-
-
-
-
-
-  h2{
-    display: none;
-
-  }
-  .cardPost {
-    display: none;
-  }
-
 }

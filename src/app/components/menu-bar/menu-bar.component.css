@@ -15,12 +15,35 @@
     width: 45px;
   }
 }
+.LogoNayane{
+  height: 70px;
+  transform: rotateY(360deg);
+  width: 70px;
+  animation-name: animacaoLogo;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,1,1, 1);
+}
+
+@keyframes animacaoLogo {
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+  }
+}
+
+.LogoNayane>img {
+  height: 100%;
+  width: 100%;
+}
 .mainMenu_resp{
   display: block;
   margin-right: 30px;
   width: 45px;
   height: 40px;
   background-color: #fff;
+  border-radius: 8px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -53,9 +76,10 @@
 }
 
 .container__menu-bar{
-  width: 1200px;
+  width: 95vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .container__menu-bar>ul{
@@ -96,6 +120,17 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  .container__menu-bar > ul{
+    width: 20vw;
+  }
+
+  .LogoNayane{
+    height: 60px;
+
+    width: 60px;
+
   }
 
   .mainMenu{

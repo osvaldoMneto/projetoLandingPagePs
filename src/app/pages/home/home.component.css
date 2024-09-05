@@ -137,18 +137,17 @@ border: 30px solid blue;
 }
 
 .animated-div {
-  display: inline-block;
-  perspective: 1000px; /* Define a perspectiva para simular a rotação em 3D */
+  animation: rotateAnimation 10s linear infinite;
 }
 
 .card {
-  width: 100px; /* Largura da carta */
+  width: 200px; /* Largura da carta */
   height: 200px; /* Altura da carta */
 
 
 
-  transform-style: preserve-3d; /* Mantém a hierarquia de transformações */
-  animation: rotateAnimation 10s linear infinite;
+ /* Mantém a hierarquia de transformações */
+
 }
 
 .front, .back {
@@ -158,9 +157,7 @@ border: 30px solid blue;
   backface-visibility: hidden; /* Esconde o verso da carta */
 }
 
-.back {
-  transform: rotateY(180deg); /* Inicialmente vira a carta para o verso */
-}
+
 
 @keyframes rotateAnimation {
   from {
@@ -175,9 +172,16 @@ border: 30px solid blue;
 
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
+  .btn{
+    width: 122px;
+    font-size: 11px;
+    height: 24px;
+    padding: 0px;
+
+  }
   .articles__others{
     margin: 0px 0px;
-    display: none;
+
   }
   .frase{
     display: none;

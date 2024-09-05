@@ -35,15 +35,12 @@ body {
     font-size: 14px; /* Reduza o tamanho da fonte */
     width: 100vw;
   }
+
+
 }
 
 /* Estilos para telas médias (601px a 1024px) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Adicione estilos específicos para telas médias aqui */
-  .container {
-    width: 80%; /* Reduza a largura do container */
-  }
-}
+
 
 /* Estilos para telas grandes (mais de 1024px) */
 @media only screen and (min-width: 1025px) {

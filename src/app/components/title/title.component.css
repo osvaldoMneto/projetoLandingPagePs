@@ -51,7 +51,7 @@
     width: 100vw;
   }
   .container__menu__title > h2 {
-    font-size: 30px; /* Reduza o tamanho da fonte em telas menores */
+    font-size: 29px; /* Reduza o tamanho da fonte em telas menores */
   }
 }
 
