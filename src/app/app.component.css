@@ -1,6 +1,4 @@
-footer{
 
-}
 img{
   height: 20px;
   margin-right: 5px;
@@ -95,7 +93,7 @@ box-shadow: 1px 1px 2px 2px rgb(165, 165, 224);
 border-radius: 4px;
 font: color"white";
 border: 2px solid rgb(202, 202, 235);
-background: rgb(255, 245, 199);
+background-color: #fcdb67;
 border-radius: 4px;
 
 }
@@ -209,16 +207,16 @@ a{
   }
 
   .activities {
-    background-color: #fff17a;
+    background-color: #fcdb67;
     height: 540px;
-    overflow: scroll;
-    margin-left: 0; /* Remova a margem à esquerda */
-    margin-top: 20px; /* Ajuste o espaçamento superior */
-    font-size: 16px; /* Reduza o tamanho da fonte */
-    width: 300px;
-    position: absolute;
-    top: 850px;
-    left: 14vw;
+    /* overflow: scroll; */
+    margin-left: 0;
+    margin-top: 20px;
+    /* margin-bottom: 223px; */
+    font-size: 16px;
+    width: 100vw;
+    /* position: absolute; */
+    border-radius: 6%;
   }
   .imagem {
     width: 278px;

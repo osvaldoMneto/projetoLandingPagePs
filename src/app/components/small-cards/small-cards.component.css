@@ -119,4 +119,8 @@ margin-top: 20px;
 h5{
   font-size: 16px;
 }
+.card-body{
+  padding: 8px;
+
+}
 }
