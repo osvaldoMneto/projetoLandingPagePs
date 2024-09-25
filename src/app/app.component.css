@@ -1,6 +1,4 @@
-footer{
 
-}
 img{
   height: 20px;
   margin-right: 5px;
@@ -157,10 +155,11 @@ a{
     padding-top: 15px;
    }
 
-   .footer{
+   .footer {
     display: flex;
+    justify-content: center;
     height: 65%;
-   }
+}
 
    .text{
     font-size: 13px;
@@ -179,8 +178,9 @@ a{
     display: none;
    }
    .infos>p{
+    width: 100%;
     font-weight: 600;
-    text-align: end;
+    text-align: center;
     font-size: 14px;
    }
 
@@ -188,6 +188,11 @@ a{
     padding-right: 20px;
     height: 20px;
    }
+
+   .infos{
+    width: 30%;
+   }
+
 
    .infos>ul>li{
     margin: 5px;
@@ -240,5 +245,21 @@ a{
   .conteudo > ul > li {
     margin-right: 0; /* Remova a margem direita */
     margin-bottom: 10px; /* Ajuste o espaçamento inferior */
+  }
+
+  .contato>p{
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+  }
+  .certificados>p{
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+  }
+  .certificados>ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
   }
 }

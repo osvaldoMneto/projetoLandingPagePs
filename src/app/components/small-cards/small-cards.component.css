@@ -105,18 +105,26 @@ i{
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
   .cardPost{
-    margin: 0px;
-    width: 100vw;
-    justify-content: space-evenly;
-    margin-top: 60px;
+   
+      display: flex;
+      margin: 0px;
+      justify-content: space-evenly;
+      margin-top: 60px;
+      flex-wrap: wrap;
+      width: 100vw;
+
   }
 .card{
-width: 10rem;
+width: 40vw;
 height: 200px;
 font-size: 12px;
 margin-top: 20px;
 }
 h5{
   font-size: 16px;
+}
+.card-body{
+  padding: 8px;
+
 }
 }
