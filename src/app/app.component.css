@@ -215,10 +215,8 @@ a{
     margin-left: 0; /* Remova a margem à esquerda */
     margin-top: 20px; /* Ajuste o espaçamento superior */
     font-size: 16px; /* Reduza o tamanho da fonte */
-    width: 300px;
-    position: absolute;
+    width: 100vw;
     top: 850px;
-    left: 14vw;
   }
   .imagem {
     width: 278px;

@@ -51,7 +51,6 @@ abrirAtividades(){
   atividade?.classList.toggle('card_atividades_aberto')
   atividade?.classList.toggle('card_atividades_fechado')
   this.index = false
-  console.log(this.index)
 }
 }
 
