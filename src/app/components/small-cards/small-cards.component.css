@@ -19,7 +19,7 @@
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
-  background-color: #ffb5c591;
+  background-color: #fef896;
   /* border: solid 1px #6f42c1; */
   box-shadow: 0px 0px 2px 0px #6f42c1;
 }
@@ -105,7 +105,7 @@ i{
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
   .cardPost{
-   
+
       display: flex;
       margin: 0px;
       justify-content: space-evenly;
