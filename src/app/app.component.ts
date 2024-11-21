@@ -21,7 +21,7 @@ export class AppComponent {
       this.heroiClicado = heroiClicado;
       //this.Heroes = objeto;
 
-      const elemento = document.getElementById('componenteExibicao');
+      const elemento = document.querySelector('#componenteExibicao');
       if (elemento) {
         elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
@@ -29,5 +29,10 @@ export class AppComponent {
     });
 
 
+
+
+  }
+  fecharHeroi(){
+    this.heroiClicado = false
   }
 }

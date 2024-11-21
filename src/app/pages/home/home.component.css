@@ -19,30 +19,6 @@ header{
 
 }
 
-.frase{
-  display: flex;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(107, 107, 210);
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
-  justify-content: center;
-  margin: 100px;
-  width: 1000px;
-  height: 60px;
-  background: whitesmoke;
-  transition: width 2s, height 4s;
-  font-family:"Roboto", sans-serif;
-}
-
-
-
-.frase:hover{
-  width: 1200px;
-  height: 70px;
-
-}
-
 .btn-contato{
 
   position:fixed;
@@ -161,18 +137,17 @@ border: 30px solid blue;
 }
 
 .animated-div {
-  display: inline-block;
-  perspective: 1000px; /* Define a perspectiva para simular a rotação em 3D */
+  animation: rotateAnimation 10s linear infinite;
 }
 
 .card {
-  width: 100px; /* Largura da carta */
+  width: 200px; /* Largura da carta */
   height: 200px; /* Altura da carta */
 
 
 
-  transform-style: preserve-3d; /* Mantém a hierarquia de transformações */
-  animation: rotateAnimation 10s linear infinite;
+ /* Mantém a hierarquia de transformações */
+
 }
 
 .front, .back {
@@ -182,9 +157,7 @@ border: 30px solid blue;
   backface-visibility: hidden; /* Esconde o verso da carta */
 }
 
-.back {
-  transform: rotateY(180deg); /* Inicialmente vira a carta para o verso */
-}
+
 
 @keyframes rotateAnimation {
   from {
@@ -199,15 +172,45 @@ border: 30px solid blue;
 
 /* Ajuste de responsividade para telas menores */
 @media only screen and (max-width: 768px) {
+  .btn{
+    width: 122px;
+    font-size: 11px;
+    height: 24px;
+    padding: 0px;
+
+  }
+  .articles__others{
+    margin: 0px 0px;
+
+  }
+  .frase{
+    display: none;
+    width: 100vw;
+    transition:none;
+    margin: 0px;
+  }
+  .frase:hover{
+    width: 100vw;
+  }
+  .frase>h2{
+    font-size: 24px;
+  }
   .container__articles {
-    flex-direction: column; /* Altere a direção do flex container para uma coluna em telas menores */
-    align-items: center; /* Centralize os itens verticalmente */
+    height: auto;
+     /* Centralize os itens verticalmente */
+     display: flex;
+
+    width: 100vw;
   }
 
   .articles__main {
-    width: 100%; /* Altere a largura para ocupar toda a largura da tela */
-    margin-left: 0; /* Remova a margem à esquerda */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw; /* Altere a largura para ocupar toda a largura da tela */
+   /* Remova a margem à esquerda */
     margin-top: 20px; /* Ajuste o espaçamento superior */
+    margin-left: 0px;
   }
 
   .articles__main > img {

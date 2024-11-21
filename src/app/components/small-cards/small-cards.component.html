@@ -1,25 +1,9 @@
-<!--<div class="cardPost">
-<ng-container class="small-cards" *ngFor="let hero of Heroes; let i = index">
-<div class="card" style="width: 16rem;" *ngIf="i < quantidadeCards">
- /Aqui commentarorio-<img src="/../assets/nayane4.jpeg" alt="..." class="rounded-circle">
-
-  <div class="card-body" (click)= "changeSmall()">
-    <h5 class="card-title">{{hero.name}}</h5>
-    <p class="card-text">{{hero.text}}</p>
-    <a routerLink="smallcards"></a>
-  </div>
-</div>
-</ng-container>
-</div>
-
--->
 
 
 
-<h2>Atividades</h2>
 <div class="cardPost">
   <ng-container class="small-cards" *ngFor="let hero of Heroes; let i = index">
-  <div class="card" style="width: 16rem;" *ngIf="i < quantidadeCards">
+  <div class="card"  *ngIf="i < quantidadeCards">
    <!---<img src="/../assets/nayane4.jpeg" alt="..." class="rounded-circle">-->
 
     <div  class="card-body" (click)= "selectHero(hero)">
@@ -31,9 +15,13 @@
       </svg>
       <!--<i class="bi bi-journal-check"> Leia </i>-->
       <h5 class="card-title">{{hero.name}}</h5>
-      <p class="card-text">{{hero.text}}</p>
+      <p class="text-justify">{{hero.text}}</p>
       <a routerLink="smallcards"></a>
     </div>
   </div>
   </ng-container>
   </div>
+
+
+
+

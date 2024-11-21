@@ -16,8 +16,8 @@ export class HomeComponent {
   ngOnInit() {
     this.atividadeService.objetoClicado$.subscribe((heroiClicado: any) => {
 
-      console.log('Herói clicado:', heroiClicado)
       this.heroiClicado = heroiClicado;
+      console.log('Herói clicado:', heroiClicado)
       //this.Heroes = objeto;
     });
 
